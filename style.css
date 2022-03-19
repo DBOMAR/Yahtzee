@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+  min-height: 100vh;
+
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  height: 100vh;
+  background-color: #134442;
+  margin: auto auto;
+  
+
+}
+
+.grid-items {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  color: white;
+  background-color: #134442;
+
+
+}
+
+/* spelers naam */
+.name {
+  border: solid 2px;
+  height: 120px;
+  width: 500px;
+  margin: auto;
+
+}
+
+/* text vak */
+.text {
+
+  border: solid 2px;
+  height: 120px;
+  width: 500px;
+  margin: auto;
+
+}
+
+/* dice tafel */
+.dice {
+  border: solid 2px;
+}
+
+/* dice */
+
+.diceGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 500px;
+  height: 200px;
+  margin: auto;
+  place-items: center;
+}
+
+.dice img {
+  height: 60px;
+  width: 80px;
+}
+
+/* roll dice knop */
+.rol {
+  border: solid 2px;
+  background-color: #134442;
+  color: white;
+  border: solid 2px;
+  height: 120px;
+  width: 500px;
+  margin: auto;
+
+}
+
+/* herstel knop */
+#herstel {
+  border: solid 2px;
+  background-color: #134442;
+  color: white;
+  border: solid 2px;
+  height: 120px;
+  width: 500px;
+  margin: auto;
+  
+
+}
+
+/* scors */
+.scors {
+  align-items: center;
+  border: solid 2px;
+  background-color: white;
+  height: 100vh;
+}
+
+.deel1 {
+  align-items: center;
+  border: solid 2px;
+
+  height: 100vh;
+}
+
+table,
+th,
+td {
+  border: 2px solid white;
+}
+
+table {
+  border-collapse: separate;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: #134442;
+}
+
+
+@media only screen and (max-width: 375px) {
+  .grid {
+    grid-template-columns: auto;
+  }
+}

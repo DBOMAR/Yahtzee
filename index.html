@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="grid">
+        <div class="deel1">
+            <div class="grid-items name">Omar's Yahtzee</div>
+            <div id="trying" class="grid-items text">3 TIMES LEFT</div>
+
+            <div class="grid-items dice">
+                <div id="dice">
+                    <div class="diceGrid">
+                        <div class="die" id="die1">...</div>
+                        <div class="die" id="die2">...</div>
+                        <div class="die" id="die3">...</div>
+                        <div class="die" id="die4">...</div>
+                        <div class="die" id="die5">...</div>
+                    </div>
+
+                </div>
+            </div>
+            <button class="grid-items  rol" id="rolldice">ROLL DICE</button>
+
+            <!-- herstel -->
+            <button class="grid-items "id="herstel" onclick="reload()">New Game</button>
+        </div>
+        <div class="deel2">
+            <!-- score lijst -->
+            <div class="grid-items scors">
+                <table id="scorecard">
+                    <tr>
+                        <th></th>
+                        <td class="player">Omar</td>
+
+                    </tr>
+                    <th>Ones</th>
+                    <td id="one" onclick="knopKeuze(1)">...</td>
+
+                    </tr>
+                    <tr id="twos">
+                        <th>Twos</th>
+                        <td id="two" onclick="knopKeuze(2)">...</td>
+
+                    </tr>
+                    <th>Threes</th>
+                    <td id="three" onclick="knopKeuze(3)">...</td>
+
+                    </tr>
+                    <th>Fours</th>
+                    <td id="four" onclick="knopKeuze(4)">...</td>
+
+
+                    </tr>
+                    <th>Fives</th>
+                    <td id="five" onclick="knopKeuze(5)">...</td>
+
+                    </tr>
+                    <th>Sixes</th>
+                    <td id="six" onclick="knopKeuze(6)">...</td>
+
+                    </tr>
+                    <th>Sum</th>
+                    <td id="totalSum">0</td>
+
+                    </tr>
+
+                    <th>Three of a kind</th>
+                    <td id="threeOfAKind" onclick="calcThreeOfAKind()">...</td>
+
+                    </tr>
+                    <th>Four of a kind</th>
+                    <td id="fourOfAKind" onclick="calcfourOfAKind()">...</td>
+
+                    </tr>
+                    <th>Full House</th>
+                    <td id="fullHouse" onclick="fullHouse()">...</td>
+
+                    </tr>
+                    <th>Small straight</th>
+                    <td id="smallStraight" onclick="smallStright()">...</td>
+
+                    </tr>
+                    <th>Large straight</th>
+                    <td id="largeStraight" onclick="largeStright()">...</td>
+
+                    </tr>
+                    <th>Chance</th>
+                    <td id="chance" onclick="Chance()">...</td>
+
+                    </tr>
+                    <th>YAHTZEE</th>
+                    <td id="yahtzee" onclick="Yahtzee()">...</td>
+
+                    </tr>
+                    <th>TOTAL SCORE</th>
+                    <td id="totalScore">0</td>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="script.js"></script>
